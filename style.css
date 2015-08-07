@@ -1,0 +1,481 @@
+/*   
+Theme Name: Italy Source
+Theme URI: http://www.italysource.com
+Description: Custom Wordpress Theme developed by Michael Roach
+Author: Michael Roach
+Author URI: http://www.michaelroach.us/
+*/
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: url(img/bg-tile.gif);
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
+}
+
+h1 {
+  color: #ff1919;
+  font-size: 2.7rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+a {
+  color: #136a35;
+}
+
+a:hover {
+  color: #007b36;
+}
+
+.row {
+  max-width: 1130px;
+}
+
+header {
+  border-bottom: 10px #ff1919 solid;
+  background: url(img/full-screen-gradient.gif);
+  background-position: center center;
+}
+
+header .gradient-bg {
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 6px 0;
+  position: relative;
+  background: url(img/header-gradient.gif);
+}
+
+header #site-logo {
+  max-width: 164px;
+  height: auto;
+}
+
+header .site-description {
+  position: absolute;
+  bottom: 25px;
+  left: 142px;
+  display: inline;
+  font-style: italic;
+  font-weight: 600;
+}
+
+header nav.mobile-button {
+  background: #000;
+  display: inline;
+  position: absolute;
+  bottom: 30%;
+  right: 15px;
+  border-radius: 4px;
+}
+
+header nav.mobile-button a i {
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 6px 10px 6px;
+}
+
+header nav.desktop {
+  display: inline;
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  text-transform: uppercase;
+}
+
+header nav.desktop ul {
+  margin: 0;
+  display: inline;
+  font-weight: 700;
+}
+
+header nav.desktop ul li:hover ul {
+  display: block;
+  visibility: visible;
+}
+
+header nav.desktop ul li {
+  position: relative;
+  padding: 0 10px;
+  list-style: none;
+  line-height: 12px;
+  display: inline-block;
+  border-right: 1px solid #fff;
+}
+
+header nav.desktop ul li a {
+  color: #ffffff;
+  font-size: .94rem;
+  display: block;
+}
+
+header nav.desktop ul li a:hover {
+  color: #ffffff;
+}
+
+header nav.desktop ul li:last-child {
+  border: 0;
+  padding-right: 0;
+}
+
+header nav.desktop ul li ul {
+  padding-top: 10px;
+  visibility: hidden;
+  min-width: 200px;
+  position: absolute;
+  left: 0;
+  z-index: 999;
+}
+
+header nav.desktop ul li ul li {
+  transition: 0.25s all;
+  background: #7bc242;
+  display: block;
+  border: 0px;
+}
+
+header nav.desktop ul li ul li a {
+  font-size: 1.1rem;
+  display: block;
+  text-transform: none;
+  padding: 10px 10px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+header nav.desktop ul li ul li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+header nav.desktop ul li ul li:hover {
+  background: #73b53e;
+}
+
+aside.left-off-canvas-menu ul {
+  margin: 0;
+}
+
+aside.left-off-canvas-menu li {
+  display: block;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+aside.left-off-canvas-menu li a {
+  color: #ffffff;
+}
+
+ul.header-array {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+ul.footer-array {
+  display: block;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+ul.logo-array {
+  margin: 0;
+}
+
+ul.logo-array li {
+  margin-left: 15px;
+  list-style: none;
+  display: inline-block;
+}
+
+ul.logo-array li img {
+  height: 45px;
+  width: auto;
+}
+
+.hero {
+  border-bottom: 10px #77cb19 solid;
+  padding: 50px 0;
+  background: url(img/map-hero-bg.gif);
+  background-position: center top;
+}
+
+.hero h1 {
+  font-size: 1.9rem;
+  margin-top: -6px;
+  margin-bottom: 0;
+}
+
+.level-2 {
+  padding-top: 50px;
+}
+
+.background-wrap {
+  background: url(img/bg-tile.jpg);
+}
+
+.single-package {
+  padding: 40px 0;
+}
+
+.single-package img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.single-package h2 {
+  font-size: 16px;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+  background: url(img/stripe-red.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.single-package:nth-child(2) h2 {
+  background: url(img/stripe-green.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.single-package:nth-child(6) h2 {
+  background: url(img/stripe-green.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.single-package:nth-child(10) h2 {
+  background: url(img/stripe-green.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.rule-triangle {
+  margin-bottom: 40px;
+}
+
+.blog {
+  padding: 0 0 0px;
+}
+
+.blog .featured {
+  max-width: 120px;
+  height: auto;
+  border: 1px solid #ff1919;
+  float: left;
+  margin-right: 15px;
+}
+
+.blog h3 {
+  color: #ff1919;
+  font-size: 1.3rem;
+  display: inline;
+}
+
+.blog .subhead {
+  color: #ff1919;
+}
+
+.blog p {
+  clear: left;
+  padding-top: 10px;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.category-hero {
+  margin-bottom: 20px;
+}
+
+a.read-more {
+  color: #136a35;
+}
+
+a.read-more:hover {
+  color: #007b36;
+}
+
+.center {
+  text-align: center;
+}
+
+.table {
+  display: table;
+}
+
+.table-right {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.sidebar {
+  margin-bottom: 50px;
+}
+
+.sidebar .map-bg {
+  background: url(img/map-hero-bg.gif);
+  background-position: center center;
+  padding-bottom: 30px;
+}
+
+.sidebar .sidebar-inner-wrap {
+  padding: 0 30px;
+}
+
+.sidebar img {
+  margin: 20px 0;
+}
+
+.sidebar img.hr {
+  margin: 0 auto 20px;
+  max-width: 75%;
+  display: block;
+}
+
+.sidebar h2 {
+  font-size: 16px;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.sidebar h2.red {
+  background: url(img/stripe-red.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sidebar h2.green {
+  background: url(img/stripe-green.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sidebar .travel-responder {
+  color: #ff1919;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.sidebar .travel-responder a {
+  color: #ff1919;
+}
+
+.sidebar ul {
+  font-size: 1.1rem;
+}
+
+.sidebar .p {
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+}
+
+footer {
+  background: #f02a29;
+  color: #fff;
+}
+
+footer p {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+footer nav {
+  display: block;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+footer nav ul {
+  text-align: center;
+}
+
+footer nav ul li {
+  padding: 0 10px;
+  list-style: none;
+  line-height: 12px;
+  display: inline-block;
+  border-right: 1px solid #fff;
+}
+
+footer nav ul li a {
+  color: #ffffff;
+  font-size: .94rem;
+}
+
+footer nav ul li a:hover {
+  color: #f0f0f0;
+}
+
+footer nav ul li:last-child {
+  border: 0;
+  padding-right: 0;
+}
+
+/* Define mobile styles */
+@media only screen and (max-width: 40em) {
+  .small-space-below {
+    margin-bottom: 25px;
+  }
+  .hero h1 {
+    margin: 20px 0 10px;
+  }
+  header .gradient-bg {
+    padding: 0;
+  }
+  header #site-logo {
+    max-width: 120px;
+    height: auto;
+  }
+  header .site-description {
+    display: none;
+  }
+  .single-package {
+    padding: 40px 0 0;
+  }
+  .single-package:last-of-type {
+    padding-bottom: 40px;
+  }
+}
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (min-width: 40.063em) {
+  .medium-space-below {
+    margin-bottom: 25px;
+  }
+  .single-package {
+    padding: 40px 0 0;
+  }
+  .single-package:last-of-type {
+    padding-bottom: 40px;
+  }
+}
+
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 64.063em) {
+  .single-package {
+    padding: 40px 0;
+  }
+}
+
+/* min-width 1025px, large screens */
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */

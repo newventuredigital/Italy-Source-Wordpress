@@ -1,0 +1,180 @@
+/*   
+Theme Name: Italy Source
+Theme URI: http://www.italysource.com
+Description: Custom Wordpress Theme developed by Michael Roach
+Author: Michael Roach
+Author URI: http://www.michaelroach.us/
+*/
+
+
+$white:#ffffff;
+$white-hover:#f0f0f0;
+$red: #ff1919;
+$green: #77cb19;
+$green-gradient: #7bc242;
+$green-dropdown: #73b53e;
+$green-dark: #136a35;
+$green-dark-hover: #007b36;
+$black: #000;
+html {-webkit-font-smoothing: antialiased;}
+body{background:url(img/bg-tile.gif); font-family: 'Crimson Text', serif; font-weight:400; color:$black;}
+h1,h2,h3,h4,h5 {font-family: 'Crimson Text', serif; font-weight:700;}
+h1 {color:$red; font-size:2.7rem;}
+p {font-size:1.2rem; font-weight:400;}
+a {color:$green-dark; }
+a:hover {color:$green-dark-hover;}
+.row {max-width:1130px;}
+
+header {border-bottom:10px $red solid; background:url(img/full-screen-gradient.gif); background-position:center center;
+  .gradient-bg {width:1100px; max-width:100%; margin:0 auto; padding:6px 0; position:relative;
+                background:url(img/header-gradient.gif);}
+  #site-logo {max-width:164px; height:auto;}
+  .site-description {position:absolute; bottom:25px; left:142px; display:inline; font-style:italic; font-weight:600;}
+  nav.mobile-button {background:$black; display:inline; position:absolute; bottom:30%; right:15px; border-radius:4px;
+    a i{color:$white; font-size:1.5rem; padding:6px 10px 6px; }
+  }
+  nav.desktop {display:inline; position:absolute; bottom:25px; right:0; text-transform:uppercase; 
+    ul {margin:0; display:inline; font-weight:700;
+    li:hover ul {display:block; visibility: visible;}
+    li {position:relative; padding:0 10px; list-style:none; line-height:12px; display:inline-block; border-right:1px solid #fff;
+      a {color:$white; font-size:.94rem; display:block;}
+      a:hover {color:$white;}
+      &:last-child{border:0; padding-right:0;}
+        ul {padding-top:10px; visibility: hidden; min-width: 200px; position: absolute;
+  left: 0; z-index: 999; 
+            & li:first-child {}
+            li {transition:0.25s all; background: $green-gradient; display:block; border:0px;
+              a {font-size:1.1rem; display:block; text-transform:none; padding:10px 10px; line-height:1.5; font-weight:400;}
+            }
+            & li:last-child {border-radius:0 0 5px 5px;}
+            li:hover {background:$green-dropdown;}
+
+}
+} } } }
+
+aside.left-off-canvas-menu {
+  ul {margin:0;}
+  li {display:block; list-style:none; padding:10px 20px;
+    a {color:$white;}
+  }
+}
+
+ul.header-array {position:absolute; top:30px; right:0;}
+ul.footer-array {display:block; text-align:center; padding-bottom:25px;}
+ul.logo-array {margin:0;
+  li {margin-left:15px; list-style:none; display:inline-block;
+    img {height:45px; width:auto;}
+  }
+}
+
+.hero {border-bottom:10px $green solid; padding:50px 0; background:url(img/map-hero-bg.gif); background-position:center top;
+  h1 {font-size:1.9rem; margin-top:-6px; margin-bottom:0;}
+}
+.level-2 {padding-top:50px;}
+.background-wrap {background:url(img/bg-tile.jpg)}
+
+.packages {}
+.single-package {padding:40px 0;
+  img {display:block; margin:0 auto; width:200px; height:auto; margin-bottom:10px;}
+  h2 {font-size:16px; padding:10px 0; color:#fff; text-align:center; background:url(img/stripe-red.png); background-repeat:no-repeat; background-position:center center;}
+}
+.single-package:nth-child(2) {
+  h2 {background:url(img/stripe-green.png); background-repeat:no-repeat; background-position:center center;}
+}
+.single-package:nth-child(6) {
+  h2 {background:url(img/stripe-green.png); background-repeat:no-repeat; background-position:center center;}
+}
+.single-package:nth-child(10) {
+  h2 {background:url(img/stripe-green.png); background-repeat:no-repeat; background-position:center center;}
+}
+
+.rule-triangle {margin-bottom:40px;}
+
+.blog {padding:0 0 0px;
+  .featured {max-width:120px; height:auto; border:1px solid $red; float:left; margin-right:15px;}
+  h3 {color:$red; font-size:1.3rem; display:inline;}
+  .subhead {color:$red;}
+  p {clear:left; padding-top:10px; font-size:1rem; line-height:1.4rem;}
+}
+
+.category-hero {margin-bottom:20px;}
+
+a.read-more {color:$green-dark;}
+a.read-more:hover {color:$green-dark-hover;}
+
+.center {text-align:center;}
+
+.table {display: table;}
+.table-right {display: table-cell; vertical-align: bottom;}
+
+.sidebar { margin-bottom:50px;
+  .map-bg {background:url(img/map-hero-bg.gif); background-position:center center; padding-bottom:30px;}
+  .sidebar-inner-wrap {padding:0 30px; }
+  img {margin:20px 0;}
+  img.hr {margin:0 auto 20px; max-width:75%; display:block;}
+  h2 {font-size:16px; padding:10px 0; color:#fff; text-align:center;}
+  h2.red {background:url(img/stripe-red.png); background-repeat:no-repeat; background-position:center center;}
+  h2.green {background:url(img/stripe-green.png); background-repeat:no-repeat; background-position:center center;}
+  .travel-responder {color:$red; font-weight:700; font-size:1.3rem;
+    a {color:$red;}
+  }
+  ul {font-size:1.1rem;}
+  .p {font-size:1.2rem; margin-bottom:1.25rem;}
+
+}
+
+footer {background:#f02a29; color:#fff;
+    p {font-weight:normal; font-size:1rem; line-height:1.4rem;}
+    nav {display:block; text-transform:uppercase; margin:30px 0;
+    ul {text-align:center;
+    li {padding:0 10px; list-style:none; line-height:12px; display:inline-block; border-right:1px solid #fff;
+      a {color:$white; font-size:.94rem;}
+      a:hover {color:$white-hover;}
+      &:last-child{border:0; padding-right:0;}
+      }
+    }
+  }
+}
+
+
+// Small screens
+@media only screen {
+
+} /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+  .small-space-below {margin-bottom:25px;}
+  .hero {h1 {margin:20px 0 10px;}}
+  header {
+    .gradient-bg {padding:0;}
+    #site-logo {max-width:120px; height:auto;}
+    .site-description {display:none;}
+    }
+  .single-package {padding:40px 0 0;}
+  .single-package:last-of-type {padding-bottom:40px;}
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+  .medium-space-below {margin-bottom:25px;}
+  .single-package {padding:40px 0 0;}
+  .single-package:last-of-type {padding-bottom:40px;}
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+  .single-package {padding:40px 0;}
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
