@@ -22,13 +22,12 @@ $content = str_replace(']]>', ']]&gt;', $content);
 return $content;
 } 
 
+add_theme_support( 'post-thumbnails' ); 
+
 function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
-
-
-
 
 function custom_sidebars() {
 
@@ -83,5 +82,46 @@ function custom_sidebars() {
   register_sidebar( $args );
 }
 add_action( 'widgets_init', 'custom_sidebars' );
+
+add_action( 'init', 'package_pos' );
+function package_pos() {
+  $labels = array(
+    'name'               => _x( 'Packages', 'post type general name' ),
+    'singular_name'      => _x( 'Package', 'post type singular name' ),
+    'menu_name'          => _x( 'Packages', 'admin menu' ),
+    'name_admin_bar'     => _x( 'Package', 'add new on admin bar' ),
+    'add_new'            => _x( 'Add New', 'package' ),
+    'add_new_item'       => __( 'Add New Package' ),
+    'new_item'           => __( 'New Package' ),
+    'edit_item'          => __( 'Edit Package' ),
+    'view_item'          => __( 'View Package' ),
+    'all_items'          => __( 'All Packages' ),
+    'search_items'       => __( 'Search Packages' ),
+    'parent_item_colon'  => __( 'Parent Packages:' ),
+    'not_found'          => __( 'No packages found.' ),
+    'not_found_in_trash' => __( 'No packages found in Trash.' )
+  );
+
+  $args = array(
+    'labels'             => $labels,
+    'description'        => __( 'Description.'),
+    'taxonomies' => array('category'),
+    'public'             => true,
+    'publicly_queryable' => true,
+    'show_ui'            => true,
+    'show_in_menu'       => true,
+    'query_var'          => true,
+    'rewrite'            => array( 'slug' => 'package' ),
+    'capability_type'    => 'post',
+    'has_archive'        => true,
+    'hierarchical'       => false,
+    'menu_position'      => 5,
+    'menu_icon'      => 'dashicons-products',
+    'supports'           => array( 'title', 'editor', 'thumbnail' )
+  );
+
+  register_post_type( 'package', $args );
+}
+
 
 ?>

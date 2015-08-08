@@ -17,12 +17,12 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
+  color: #ff1919;
   font-family: 'Crimson Text', serif;
   font-weight: 700;
 }
 
 h1 {
-  color: #ff1919;
   font-size: 2.7rem;
 }
 
@@ -302,6 +302,36 @@ ul.logo-array li img {
   margin-bottom: 20px;
 }
 
+.package-post-type .attachment-post-thumbnail {
+  max-width: 350px;
+  margin-bottom: 30px;
+}
+
+.package-post-type h1 {
+  font-size: 2.2rem;
+}
+
+.package-post-type h2 {
+  font-size: 1.7rem;
+}
+
+.package-post-type h3 {
+  font-size: 1.7rem;
+}
+
+hr {
+  background: url("http://localhost/wp-content/themes/italysource/img/hr.png");
+  min-height: 24px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 0;
+  margin: 50px 0;
+}
+
+ol, ul, li {
+  font-size: 1.2rem;
+}
+
 a.read-more {
   color: #136a35;
 }
@@ -321,10 +351,6 @@ a.read-more:hover {
 .table-right {
   display: table-cell;
   vertical-align: bottom;
-}
-
-.sidebar {
-  margin-bottom: 50px;
 }
 
 .sidebar .map-bg {
@@ -388,6 +414,7 @@ a.read-more:hover {
 footer {
   background: #f02a29;
   color: #fff;
+  margin-top: 50px;
 }
 
 footer p {

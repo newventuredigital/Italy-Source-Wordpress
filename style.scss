@@ -18,8 +18,8 @@ $green-dark-hover: #007b36;
 $black: #000;
 html {-webkit-font-smoothing: antialiased;}
 body{background:url(img/bg-tile.gif); font-family: 'Crimson Text', serif; font-weight:400; color:$black;}
-h1,h2,h3,h4,h5 {font-family: 'Crimson Text', serif; font-weight:700;}
-h1 {color:$red; font-size:2.7rem;}
+h1,h2,h3,h4,h5 {color:$red; font-family: 'Crimson Text', serif; font-weight:700;}
+h1 {font-size:2.7rem;}
 p {font-size:1.2rem; font-weight:400;}
 a {color:$green-dark; }
 a:hover {color:$green-dark-hover;}
@@ -99,6 +99,16 @@ ul.logo-array {margin:0;
 
 .category-hero {margin-bottom:20px;}
 
+.package-post-type {
+  .attachment-post-thumbnail {max-width:350px; margin-bottom:30px;}
+  h1 {font-size:2.2rem;}
+  h2 {font-size:1.7rem;}
+  h3 {font-size:1.7rem;}
+}
+
+hr {background:url('http://localhost/wp-content/themes/italysource/img/hr.png'); min-height:24px; background-position:center center; background-repeat:no-repeat; border:0; margin:50px 0;}
+ol, ul, li {font-size:1.2rem;}
+
 a.read-more {color:$green-dark;}
 a.read-more:hover {color:$green-dark-hover;}
 
@@ -107,7 +117,7 @@ a.read-more:hover {color:$green-dark-hover;}
 .table {display: table;}
 .table-right {display: table-cell; vertical-align: bottom;}
 
-.sidebar { margin-bottom:50px;
+.sidebar {
   .map-bg {background:url(img/map-hero-bg.gif); background-position:center center; padding-bottom:30px;}
   .sidebar-inner-wrap {padding:0 30px; }
   img {margin:20px 0;}
@@ -123,7 +133,7 @@ a.read-more:hover {color:$green-dark-hover;}
 
 }
 
-footer {background:#f02a29; color:#fff;
+footer {background:#f02a29; color:#fff; margin-top:50px;
     p {font-weight:normal; font-size:1rem; line-height:1.4rem;}
     nav {display:block; text-transform:uppercase; margin:30px 0;
     ul {text-align:center;

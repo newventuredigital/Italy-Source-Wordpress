@@ -1,78 +1,43 @@
 <?php get_header(); ?>
-
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <section class="hero">
   <div class="body-wrap">
     <div class="row">
-      <div class="medium-4 columns small-text-center"><img src="<?php bloginfo('template_directory'); ?>/img/home-featured.jpg"></div>
+      <div class="medium-4 columns small-text-center"><?php if (has_post_thumbnail()) { the_post_thumbnail(); } ?></div>
       <div class="medium-8 columns">
-        <h1>Welcome to Italy Source!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada mauris dui, at auctor mauris tempor ac. In hac habitasse platea dictumst. Vestibulum sed dolor velit. Donec posuere nisi ut urna tempor gravida. Cras efficitur venenatis feugiat. Nullam fringilla risus pulvinar, bibendum ligula at, sagittis eros. Nulla rutrum sodales felis nec posuere. Pellentesque vel consectetur lectus. In tincidunt arcu ex, vitae sagittis nibh malesuada a. Morbi tincidunt cursus lectus non venenatis. In eleifend faucibus elementum. Sed id neque tempor, gravida arcu et, tempus quam.</p>
+        <h1><?php the_field('site_welcome'); ?></h1>
+        <?php the_content(); ?>
       </div>
     </div>
 </section>
-
+<?php endwhile; endif; ?>
 <section class="packages">
   <div class="row">
-    <div class="medium-6 large-4 columns single-package">
-      <a href="#">
-        <img src="<?php bloginfo('template_directory'); ?>/img/arch.jpg">
-        <h2>Honeymoon & Anniversary</h2>
-      </a>
-    </div>
-    <div class="medium-6 large-4 columns single-package">
-      <a href="#">
-        <img src="<?php bloginfo('template_directory'); ?>/img/arch.jpg">
-        <h2>Honeymoon & Anniversary</h2>
-      </a>
-    </div>
-    <div class="medium-6 large-4 columns single-package">
-      <a href="#">
-        <img src="<?php bloginfo('template_directory'); ?>/img/arch.jpg">
-        <h2>Honeymoon & Anniversary</h2>
-      </a>
-    </div>
+
+<ul>
+<?php
+global $post;
+$args = array('numberposts' => -1, 'post_parent' => 18, 'post_type' => 'page',);
+$myposts = get_posts( $args );
+$count = 1;
+foreach( $myposts as $post ) :
+setup_postdata($post); ?>
+  
+  <div class="medium-6 large-4 columns single-package">
+    <a href="<?php the_permalink(); ?>">
+      <?php if (has_post_thumbnail()) { the_post_thumbnail(); } else { ?><img src="<?php bloginfo('template_directory'); ?>/img/arch.jpg"><?php } ?>
+      <h2><?php the_title(); ?></h2>
+    </a>
+  </div>
+
+  <?php if ($count == 3 || $count ==6) { ?>
     <div class="large-12 columns show-for-large-up">
       <img src="<?php bloginfo('template_directory'); ?>/img/rule-wave.png" alt="">
     </div>
-    <div class="medium-6 large-4 columns single-package">
-      <a href="#">
-        <img src="<?php bloginfo('template_directory'); ?>/img/arch.jpg">
-        <h2>Honeymoon & Anniversary</h2>
-      </a>
-    </div>
-    <div class="medium-6 large-4 columns single-package">
-      <a href="#">
-        <img src="<?php bloginfo('template_directory'); ?>/img/arch.jpg">
-        <h2>Honeymoon & Anniversary</h2>
-      </a>
-    </div>
-    <div class="medium-6 large-4 columns single-package">
-      <a href="#">
-        <img src="<?php bloginfo('template_directory'); ?>/img/arch.jpg">
-        <h2>Honeymoon & Anniversary</h2>
-      </a>
-    </div>
-    <div class="large-12 columns show-for-large-up">
-      <img src="<?php bloginfo('template_directory'); ?>/img/rule-wave.png" alt="">
-    </div>
-    <div class="medium-6 large-4 columns single-package">
-      <a href="#">
-        <img src="<?php bloginfo('template_directory'); ?>/img/arch.jpg">
-        <h2>Honeymoon & Anniversary</h2>
-      </a>
-    </div>
-    <div class="medium-6 large-4 columns single-package">
-      <a href="#">
-        <img src="<?php bloginfo('template_directory'); ?>/img/arch.jpg">
-        <h2>Honeymoon & Anniversary</h2>
-      </a>
-    </div>
-    <div class="medium-6 large-4 columns single-package">
-      <a href="#">
-        <img src="<?php bloginfo('template_directory'); ?>/img/arch.jpg">
-        <h2>Honeymoon & Anniversary</h2>
-      </a>
-    </div>
+  <?php } $count++; ?>
+<?php endforeach; 
+wp_reset_postdata(); ?>
+</ul>
     
     <img src="<?php bloginfo('template_directory'); ?>/img/rule-triangle.png" class="rule-triangle">
 
