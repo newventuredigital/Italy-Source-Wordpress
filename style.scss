@@ -20,9 +20,10 @@ html {-webkit-font-smoothing: antialiased;}
 body{background:url(img/bg-tile.gif); font-family: 'Crimson Text', serif; font-weight:400; color:$black;}
 h1,h2,h3,h4,h5 {color:$red; font-family: 'Crimson Text', serif; font-weight:700;}
 h1 {font-size:2.7rem;}
-p {font-size:1.2rem; font-weight:400;}
+p {font-size:1.3rem; font-weight:400;}
 a {color:$green-dark; }
 a:hover {color:$green-dark-hover;}
+a:focus {color:$green-dark-hover;}
 .row {max-width:1130px;}
 
 header {border-bottom:10px $red solid; background:url(img/full-screen-gradient.gif); background-position:center center;
@@ -100,14 +101,20 @@ ul.logo-array {margin:0;
 .category-hero {margin-bottom:20px;}
 
 .package-post-type {
-  .attachment-post-thumbnail {max-width:350px; margin-bottom:30px;}
+  .attachment-post-thumbnail {width:100%; max-width:350px; margin-bottom:30px;}
   h1 {font-size:2.2rem;}
   h2 {font-size:1.7rem;}
   h3 {font-size:1.7rem;}
 }
 
+.package-category-listing {
+  .attachment-post-thumbnail {margin-bottom:30px;}
+  .package-intro {margin-bottom:3rem;}
+  h4 {margin-bottom:0;}
+}
+
 hr {background:url('http://localhost/wp-content/themes/italysource/img/hr.png'); min-height:24px; background-position:center center; background-repeat:no-repeat; border:0; margin:50px 0;}
-ol, ul, li {font-size:1.2rem;}
+ol, ul, li {font-size:1.3rem;}
 
 a.read-more {color:$green-dark;}
 a.read-more:hover {color:$green-dark-hover;}
@@ -129,8 +136,9 @@ a.read-more:hover {color:$green-dark-hover;}
     a {color:$red;}
   }
   ul {font-size:1.1rem;}
-  .p {font-size:1.2rem; margin-bottom:1.25rem;}
-
+  .p {font-size:1.3rem;
+    .hr {margin-top:1.25rem;}
+  }
 }
 
 footer {background:#f02a29; color:#fff; margin-top:50px;
@@ -145,6 +153,8 @@ footer {background:#f02a29; color:#fff; margin-top:50px;
     }
   }
 }
+
+a.post-edit-link {font-style:italic;}
 
 
 // Small screens
@@ -188,3 +198,8 @@ footer {background:#f02a29; color:#fff; margin-top:50px;
 
 @media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 
+// Kill WP Image Floats in css/wp.css
+@media only screen and (max-width:640px) {
+  .alignleft, img.alignleft, .alignright, img.alignright, blockquote.left, blockquote.right {display:block !important; text-align:center !important; margin:0 auto !important; float: none !important;}
+  .alignleft, img.alignleft, .alignright, img.alignright {display:block; margin:0 auto;}
+}

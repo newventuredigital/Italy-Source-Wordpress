@@ -7,6 +7,7 @@
       <div class="medium-8 columns">
         <h1><?php the_field('site_welcome'); ?></h1>
         <?php the_content(); ?>
+        <p><?php edit_post_link(); ?></p>
       </div>
     </div>
 </section>

@@ -6,7 +6,6 @@
       <h2><?php the_title(); ?></h2>
       <?php the_content(); ?>
       <p><?php edit_post_link(); ?></p>
-      <hr>
       <?php endwhile; endif; ?>   
     </div>
     <?php get_sidebar(); ?>

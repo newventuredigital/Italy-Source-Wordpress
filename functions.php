@@ -34,7 +34,7 @@ function custom_sidebars() {
   // Register Sidebars
   $path_start = '<img src="';
   $site = get_bloginfo('template_directory');
-  $path_end = '/img/hr.png" class="hr"></p>';
+  $path_end = '/img/hr.png" class="hr">';
 
   $full = $path_start . $site . $path_end;
 
@@ -42,7 +42,7 @@ function custom_sidebars() {
     'id'            => 'applause-1',
     'name'          => 'Applause 1',
     'description'   => 'Main sidebar, above a horizontal rule',
-    'before_widget' => '<p>',
+    'before_widget' => '',
     'after_widget'  => $full,
     'before_title'  => '',
     'after_title'   => ''
@@ -121,6 +121,16 @@ function package_pos() {
   );
 
   register_post_type( 'package', $args );
+}
+
+if (class_exists('MultiPostThumbnails')) {
+    new MultiPostThumbnails(
+        array(
+            'label' => 'Landing Page Image',
+            'id' => 'landing-page-image',
+            'post_type' => 'page'
+        )
+    );
 }
 
 

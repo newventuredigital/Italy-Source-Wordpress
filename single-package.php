@@ -8,7 +8,7 @@
       <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
 
       <?php the_content(); ?>
-
+      <p><?php edit_post_link(); ?></p>
       <?php endwhile; endif; ?>   
     </div>
     <?php get_sidebar(); ?>
