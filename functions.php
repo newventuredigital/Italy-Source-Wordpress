@@ -105,7 +105,7 @@ function package_pos() {
   $args = array(
     'labels'             => $labels,
     'description'        => __( 'Description.'),
-    'taxonomies' => array('category'),
+    'taxonomies' => array('package_category'),
     'public'             => true,
     'publicly_queryable' => true,
     'show_ui'            => true,
@@ -133,5 +133,41 @@ if (class_exists('MultiPostThumbnails')) {
     );
 }
 
+
+// Register Custom Taxonomy
+function package_category() {
+
+  $labels = array(
+    'name'                       => 'Categories',
+    'singular_name'              => 'Category',
+    'menu_name'                  => 'Package Category',
+    'all_items'                  => 'All Items',
+    'parent_item'                => 'Parent Item',
+    'parent_item_colon'          => 'Parent Item:',
+    'new_item_name'              => 'New Package Category',
+    'add_new_item'               => 'Add Package Category',
+    'edit_item'                  => 'Edit Package Category',
+    'update_item'                => 'Update Package Category',
+    'view_item'                  => 'View Package Category',
+    'separate_items_with_commas' => 'Separate items with commas',
+    'add_or_remove_items'        => 'Add or remove items',
+    'choose_from_most_used'      => 'Choose from the most used',
+    'popular_items'              => 'Popular Items',
+    'search_items'               => 'Search Items',
+    'not_found'                  => 'Not Found',
+  );
+  $args = array(
+    'labels'                     => $labels,
+    'hierarchical'               => true,
+    'public'                     => true,
+    'show_ui'                    => true,
+    'show_admin_column'          => true,
+    'show_in_nav_menus'          => true,
+    'show_tagcloud'              => true,
+  );
+  register_taxonomy( 'package_category', array( 'package' ), $args );
+
+}
+add_action( 'init', 'package_category', 0 );
 
 ?>

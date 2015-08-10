@@ -61,7 +61,9 @@ aside.left-off-canvas-menu {
 }
 
 ul.header-array {position:absolute; top:30px; right:0;}
-ul.footer-array {display:block; text-align:center; padding-bottom:25px;}
+ul.footer-array {display:block; text-align:center; padding-bottom:25px;
+  a#travel-guard, a#asta, a#bbb, a#fb {&:hover {background-position:0 0 !important;}}
+}
 ul.logo-array {margin:0;
   li {margin-left:15px; list-style:none; display:inline-block;
     img {height:45px; width:auto;}
@@ -120,6 +122,7 @@ ul.logo-array {margin:0;
   .attachment-post-thumbnail {margin-bottom:30px;}
   .package-intro {margin-bottom:3rem;}
   h4 {margin-bottom:0;}
+  p {margin-bottom:2rem;}
 }
 
 hr {background:url('http://localhost/wp-content/themes/italysource/img/hr.png'); min-height:24px; background-position:center center; background-repeat:no-repeat; border:0; margin:50px 0;}

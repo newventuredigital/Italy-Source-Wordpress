@@ -193,6 +193,10 @@ ul.footer-array {
   padding-bottom: 25px;
 }
 
+ul.footer-array a#travel-guard:hover, ul.footer-array a#asta:hover, ul.footer-array a#bbb:hover, ul.footer-array a#fb:hover {
+  background-position: 0 0 !important;
+}
+
 ul.logo-array {
   margin: 0;
 }
@@ -382,6 +386,10 @@ ul.logo-array li a#fb:hover {
 
 .package-category-listing h4 {
   margin-bottom: 0;
+}
+
+.package-category-listing p {
+  margin-bottom: 2rem;
 }
 
 hr {

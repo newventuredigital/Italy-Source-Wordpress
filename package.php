@@ -19,8 +19,14 @@ $cat = get_the_title();
 
 $args = array(
   'posts_per_page'   => -1,
-  'category_name'    => $cat,
   'post_type'        => 'package',
+  'tax_query'        => array(
+    array(
+        'taxonomy' => 'package_category',
+        'field' => 'name',
+        'terms' => $cat
+        )
+  )
 );
 $posts_array = get_posts( $args );
 foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
