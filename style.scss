@@ -65,6 +65,15 @@ ul.footer-array {display:block; text-align:center; padding-bottom:25px;}
 ul.logo-array {margin:0;
   li {margin-left:15px; list-style:none; display:inline-block;
     img {height:45px; width:auto;}
+    a {transition:all 0;}
+    a#travel-guard {display:block; background:url('http://localhost/wp-content/themes/italysource/img/logo-travel-guard.png'); width:101px; height:50px; background-position:0 0;
+      &:hover {background-position:0 -50px; }}
+    a#asta {display:block; background:url('http://localhost/wp-content/themes/italysource/img/logo-asta.png'); width:81px; height:50px; background-position:0 0;
+      &:hover {background-position:0 -50px; }}
+    a#bbb {display:block; background:url('http://localhost/wp-content/themes/italysource/img/logo-bbb.png'); width:74px; height:50px; background-position:0 0;
+      &:hover {background-position:0 -50px; }}
+    a#fb {display:block; background:url('http://localhost/wp-content/themes/italysource/img/logo-fb.png'); width:50px; height:50px; background-position:0 0;
+      &:hover {background-position:0 -50px; }}
   }
 }
 
@@ -91,7 +100,7 @@ ul.logo-array {margin:0;
 
 .rule-triangle {margin-bottom:40px;}
 
-.blog {padding:0 0 0px;
+.blog {
   .featured {max-width:120px; height:auto; border:1px solid $red; float:left; margin-right:15px;}
   h3 {color:$red; font-size:1.3rem; display:inline;}
   .subhead {color:$red;}
@@ -124,7 +133,7 @@ a.read-more:hover {color:$green-dark-hover;}
 .table {display: table;}
 .table-right {display: table-cell; vertical-align: bottom;}
 
-.sidebar {
+.sidebar {margin-bottom:50px;
   .map-bg {background:url(img/map-hero-bg.gif); background-position:center center; padding-bottom:30px;}
   .sidebar-inner-wrap {padding:0 30px; }
   img {margin:20px 0;}
@@ -141,7 +150,7 @@ a.read-more:hover {color:$green-dark-hover;}
   }
 }
 
-footer {background:#f02a29; color:#fff; margin-top:50px;
+footer {background:#f02a29; color:#fff; 
     p {font-weight:normal; font-size:1rem; line-height:1.4rem;}
     nav {display:block; text-transform:uppercase; margin:30px 0;
     ul {text-align:center;

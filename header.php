@@ -38,9 +38,10 @@
     </nav>
 
     <ul class="logo-array header-array show-for-large-up">
-      <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/logo-asta.png"></a></li>
-      <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/logo-bbb.png"></a></li>
-      <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/logo-fb.png"></a></li>
+      <li><a href="#" id="travel-guard"></a></li>
+      <li><a href="#" id="asta"></a></li>
+      <li><a href="#" id="bbb"></a></li>
+      <li><a href="#" id="fb"></a></li>
     </ul>
 
   </div>
