@@ -218,7 +218,7 @@ ul.logo-array li a {
 
 ul.logo-array li a#travel-guard {
   display: block;
-  background: url("http://www.105works.com/wp-content/themes/italysource/img/logo-travel-guard.png");
+  background: url("http://www.105works.com/italysource/wp-content/themes/italysource/img/logo-travel-guard.png");
   width: 101px;
   height: 50px;
   background-position: 0 0;
@@ -230,7 +230,7 @@ ul.logo-array li a#travel-guard:hover {
 
 ul.logo-array li a#asta {
   display: block;
-  background: url("http://www.105works.com/wp-content/themes/italysource/img/logo-asta.png");
+  background: url("http://www.105works.com/italysource/wp-content/themes/italysource/img/logo-asta.png");
   width: 81px;
   height: 50px;
   background-position: 0 0;
@@ -242,7 +242,7 @@ ul.logo-array li a#asta:hover {
 
 ul.logo-array li a#bbb {
   display: block;
-  background: url("http://www.105works.com/wp-content/themes/italysource/img/logo-bbb.png");
+  background: url("http://www.105works.com/italysource/wp-content/themes/italysource/img/logo-bbb.png");
   width: 74px;
   height: 50px;
   background-position: 0 0;
@@ -254,7 +254,7 @@ ul.logo-array li a#bbb:hover {
 
 ul.logo-array li a#fb {
   display: block;
-  background: url("http://www.105works.com/wp-content/themes/italysource/img/logo-fb.png");
+  background: url("http://www.105works.com/italysource/wp-content/themes/italysource/img/logo-fb.png");
   width: 50px;
   height: 50px;
   background-position: 0 0;
@@ -393,7 +393,7 @@ ul.logo-array li a#fb:hover {
 }
 
 hr {
-  background: url("http://www.105works.com/wp-content/themes/italysource/img/hr.png");
+  background: url("http://www.105works.com/italysource/wp-content/themes/italysource/img/hr.png");
   min-height: 24px;
   background-position: center center;
   background-repeat: no-repeat;
