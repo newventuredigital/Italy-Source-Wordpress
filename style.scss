@@ -22,11 +22,11 @@ body{background:url(img/bg-tile.gif); font-family: 'Crimson Text', serif; font-w
 h1,h2,h3,h4,h5 {color:$red; font-family: 'Crimson Text', serif; font-weight:700;}
 h1 {font-size:2.7rem;}
 p {font-size:1.3rem; font-weight:400;}
-a {transition:all 0.25s; color:$green-dark; }
+a {color:$green-dark; }
 a:hover {color:$green-dark-hover;}
 a:focus {color:$green-dark-hover;}
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3{
   a {color:$red;}
   a:hover {color:$red-dark;}
 }
@@ -45,7 +45,7 @@ header {border-bottom:10px $red solid; background:url(img/full-screen-gradient.g
     ul {margin:0; display:inline; font-weight:700;
     li:hover ul {display:block; visibility: visible;}
     li {position:relative; padding:0 10px; list-style:none; line-height:12px; display:inline-block; border-right:1px solid #fff;
-      a {transition:all 0s !important; color:$white; font-size:.94rem; display:block;}
+      a {color:$white; font-size:.94rem; display:block;}
       a:hover {color:$white;}
       &:last-child{border:0; padding-right:0;}
         ul {padding-top:10px; visibility: hidden; min-width: 200px; position: absolute;
