@@ -11,7 +11,7 @@
       <p><?php edit_post_link(); ?></p>
       <?php endwhile; endif; ?>   
     </div>
-    <?php get_sidebar(); ?>
+    <?php get_sidebar('package'); ?>
 </section>
 
 <?php get_footer(); ?>

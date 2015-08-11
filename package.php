@@ -30,10 +30,10 @@ $args = array(
 );
 $posts_array = get_posts( $args );
 foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-  <h4>
-    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-  </h4>
-  <p><?php if (get_field('category_blurb')) { the_field('category_blurb'); } ?></p>
+    <h4>
+      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+    </h4>
+    <p><?php if (get_field('category_blurb')) { the_field('category_blurb'); } ?></p>
 <?php endforeach; 
 wp_reset_postdata();?>
 

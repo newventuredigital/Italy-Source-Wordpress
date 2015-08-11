@@ -2,16 +2,8 @@
   <div class="map-bg">
     <h2 class="green">Applause!</h2>
       <div class="sidebar-inner-wrap">
-        <div class="p">
-          <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Applause 1')) : else : ?>
-          <?php endif; ?>
-        </div>
-        
-        <div class="p">
-          <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Applause 2')) : else : ?>
-          <?php endif; ?>
-        </div>
-        <img src="<?php bloginfo('template_directory'); ?>/img/hr.png" class="hr">
+      <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Applause 1')) : else : ?>
+      <?php endif; ?> 
       </div>
     <h2 class="red">Travel Tip of the Day</h2>
       <div class="sidebar-inner-wrap">

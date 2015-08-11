@@ -8,7 +8,7 @@ if (count($excerpt)>=$limit) {
 } else { $excerpt = implode(" ",$excerpt);} 
 $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
 $link = get_the_permalink();
-$excerpt .= ' <a href="' . $link . '" class="read-more">Read More </a>';
+$excerpt .= ' <a href="' . $link . '" class="read-more">(read more) </a>';
 return $excerpt;
 }
 function content($limit) {
@@ -138,8 +138,8 @@ if (class_exists('MultiPostThumbnails')) {
 function package_category() {
 
   $labels = array(
-    'name'                       => 'Categories',
-    'singular_name'              => 'Category',
+    'name'                       => 'Package Categories',
+    'singular_name'              => 'Package Category',
     'menu_name'                  => 'Package Category',
     'all_items'                  => 'All Items',
     'parent_item'                => 'Parent Item',
@@ -165,7 +165,7 @@ function package_category() {
     'show_in_nav_menus'          => true,
     'show_tagcloud'              => true,
   );
-  register_taxonomy( 'package_category', array( 'package' ), $args );
+  register_taxonomy( 'package_category', array( 'package','post' ), $args );
 
 }
 add_action( 'init', 'package_category', 0 );
