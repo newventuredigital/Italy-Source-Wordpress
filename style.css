@@ -32,6 +32,7 @@ p {
 }
 
 a {
+  transition: all 0.25s;
   color: #136a35;
 }
 
@@ -41,6 +42,14 @@ a:hover {
 
 a:focus {
   color: #007b36;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a {
+  color: #ff1919;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
+  color: #bf1313;
 }
 
 .row {
@@ -120,6 +129,7 @@ header nav.desktop ul li {
 }
 
 header nav.desktop ul li a {
+  transition: all 0s !important;
   color: #ffffff;
   font-size: .94rem;
   display: block;
