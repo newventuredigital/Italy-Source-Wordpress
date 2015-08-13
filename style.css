@@ -198,7 +198,7 @@ ul.header-array {
 ul.footer-array {
   display: block;
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
 ul.footer-array a#travel-guard:hover, ul.footer-array a#asta:hover, ul.footer-array a#bbb:hover, ul.footer-array a#fb:hover {

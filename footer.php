@@ -15,7 +15,7 @@ $url = get_the_permalink();
       <a href="<?php echo $url; ?>">
         <div class="table">
           <div class="table-left">
-            <img src="<?php bloginfo('template_directory'); ?>/img/travel-news.jpg" class="featured">
+            <?php if (has_post_thumbnail()) { the_post_thumbnail('thumbnail', array( 'class' => 'featured' )); } ?>
           </div>
           <div class="table-right">
             <h3>Travel News</h3>
@@ -38,7 +38,7 @@ if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_quer
       <a href="<?php echo $url; ?>">
         <div class="table">
           <div class="table-left">
-            <img src="<?php bloginfo('template_directory'); ?>/img/logo-europe-source.png" class="featured">
+            <?php if (has_post_thumbnail()) { the_post_thumbnail('thumbnail', array( 'class' => 'featured' )); } ?>
           </div>
           <div class="table-right">
             <h3><?php the_title(); ?></h3>
@@ -60,7 +60,7 @@ if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_quer
       <a href="<?php echo $url; ?>">
         <div class="table">
           <div class="table-left">
-            <img src="<?php bloginfo('template_directory'); ?>/img/map-thumbnail.jpg" class="featured">
+            <?php if (has_post_thumbnail()) { the_post_thumbnail('thumbnail', array( 'class' => 'featured' )); } ?>
           </div>
           <div class="table-right">
             <h3><?php the_title(); ?></h3>
@@ -89,8 +89,12 @@ if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_quer
         <li><a href="#" id="fb"></a></li>
       </ul>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada mauris dui, at auctor mauris tempor ac. In hac habitasse platea dictumst. Vestibulum sed dolor velit. Donec posuere nisi ut urna tempor gravida. Cras efficitur venenatis feugiat. Nullam fringilla risus pulvinar, bibendum ligula at, sagittis eros. Nulla rutrum sodales felis nec posuere. Pellentesque vel consectetur lectus. In tincidunt arcu ex, vitae sagittis nibh malesuada a. Morbi tincidunt cursus lectus non venenatis.</p>
-
+<?php 
+$args = array('page_id' => 251); 
+$the_query = new WP_Query( $args );
+if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+      <?php the_content(); ?>
+<?php endwhile; endif; ?>
     </div>
   </div>
 </footer>
