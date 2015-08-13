@@ -1,3 +1,9 @@
+<div class="row back-to-top">
+  <div class="large-12 columns text-center">
+    <a href="#top"><i class="fa fa-chevron-up"></i><br>Back to Top</a>
+
+  </div>
+</div>
 
 <section class="blog">
   <div class="row">
@@ -109,6 +115,22 @@ if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_quer
 <script src="<?php bloginfo('template_directory'); ?>/js/foundation.min.js"></script>
 <script>
 $(document).foundation();
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 300);
+        return false;
+      }
+    }
+  });
+});
+
 
 </script>
 </body>

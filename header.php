@@ -22,7 +22,7 @@
 </aside>
 <!-- END Canvas Menu -->
 
-<header>
+<header id="top">
   <div class="gradient-bg">
     <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo-italy-source.png" alt="Italy Source Logo" id="site-logo"></a>
     <div class="site-description">
