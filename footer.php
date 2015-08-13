@@ -83,10 +83,10 @@ if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_quer
       </nav>
 
       <ul class="logo-array footer-array">
-        <li><a href="#" id="travel-guard"></a></li>
-        <li><a href="#" id="asta"></a></li>
-        <li><a href="#" id="bbb"></a></li>
-        <li><a href="#" id="fb"></a></li>
+        <li><a href="http://105works.com/italysource//?page_id=50" id="travel-guard"></a></li>
+        <li><a href="http://www.travelsense.org/agents/agntdetail.cfm?i=900144060&firstName=Barbara&lastName=Sobol&companyName=ItalySource,%20LLC" id="asta" target="_blank"></a></li>
+        <li><a href="http://www.bbb.org/washington-dc-eastern-pa/business-reviews/travel-agencies-and-bureaus/italysource-llc-in-charles-town-wv-7004595/" id="bbb" target="_blank"></a></li>
+        <li><a href="https://www.facebook.com/pages/ItalySource-LLC/197999614052?fref=ts" id="fb" target="_blank"></a></li>
       </ul>
 
 <?php 
