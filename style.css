@@ -547,6 +547,12 @@ footer nav ul li:last-child {
   padding-right: 0;
 }
 
+.content-featured-image {
+  margin-bottom: 2rem;
+  max-width: 400px;
+  height: auto;
+}
+
 a.post-edit-link {
   font-style: italic;
 }
