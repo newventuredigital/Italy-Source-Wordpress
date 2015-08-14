@@ -198,6 +198,22 @@ function my_mce_before_init( $settings ) {
           'styles' => array(
             'color' => '#ff1919'
           )
+        ),
+        array(
+          'title' => 'Green Bold',
+          'inline' => 'span',
+          'styles' => array(
+            'color' => '#136a35',
+            'fontWeight' => 'bold'
+          )
+        ),
+        array(
+          'title' => 'Red Bold',
+          'inline' => 'span',
+          'styles' => array(
+            'color' => '#ff1919',
+            'fontWeight' => 'bold'
+          )
         )
     );
 
