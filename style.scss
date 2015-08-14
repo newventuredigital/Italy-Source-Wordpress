@@ -31,6 +31,8 @@ h1, h2, h3{
   a:hover {color:$red-dark;}
 }
 
+ul {list-style-position:inside; margin-left:2rem;}
+
 .row {max-width:1130px;}
 
 header {border-bottom:10px $red solid; background:url(img/full-screen-gradient.gif); background-position:center center;
