@@ -170,4 +170,39 @@ function package_category() {
 }
 add_action( 'init', 'package_category', 0 );
 
+
+
+// Add custom WYSIWYG Styles
+add_filter( 'mce_buttons_2', 'my_mce_buttons_2' );
+
+function my_mce_buttons_2( $buttons ) {
+    array_unshift( $buttons, 'styleselect' );
+    return $buttons;
+}
+
+add_filter( 'tiny_mce_before_init', 'my_mce_before_init' );
+
+function my_mce_before_init( $settings ) {
+
+    $style_formats = array(
+        array(
+          'title' => 'Green',
+          'inline' => 'span',
+          'styles' => array(
+            'color' => '#136a35'
+          )
+        ),
+        array(
+          'title' => 'Red',
+          'inline' => 'span',
+          'styles' => array(
+            'color' => '#ff1919'
+          )
+        )
+    );
+
+    $settings['style_formats'] = json_encode( $style_formats );
+    return $settings;
+}
+
 ?>
