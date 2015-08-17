@@ -83,7 +83,7 @@ header #site-logo {
 
 header .site-description {
   position: absolute;
-  bottom: 25px;
+  bottom: 29px;
   left: 142px;
   display: inline;
   font-style: italic;
@@ -228,6 +228,19 @@ ul.logo-array li img {
 
 ul.logo-array li a {
   transition: all 0;
+}
+
+ul.logo-array li .phone-wrap {
+  display: table;
+  width: 100%;
+  height: 50px;
+}
+
+ul.logo-array li a#phone {
+  color: #ffffff;
+  font-size: 1.5rem;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 ul.logo-array li a#travel-guard {
@@ -406,6 +419,10 @@ ul.logo-array li a#fb:hover {
   margin-bottom: 2rem;
 }
 
+.p-red {
+  color: #ff1919;
+}
+
 hr {
   background: url("http://www.105works.com/italysource/wp-content/themes/italysource/img/hr.png");
   min-height: 24px;
@@ -508,6 +525,16 @@ a.read-more:hover {
 footer {
   background: #f02a29;
   color: #fff;
+}
+
+footer .footer-address {
+  text-align: center;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+footer .footer-address a {
+  color: #ffffff;
 }
 
 footer p {

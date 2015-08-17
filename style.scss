@@ -35,11 +35,12 @@ ul {list-style-position:inside; margin-left:2rem;}
 
 .row {max-width:1130px;}
 
+
 header {border-bottom:10px $red solid; background:url(img/full-screen-gradient.gif); background-position:center center;
   .gradient-bg {width:1100px; max-width:100%; margin:0 auto; padding:6px 0; position:relative;
                 background:url(img/header-gradient.gif);}
   #site-logo {max-width:164px; height:auto;}
-  .site-description {position:absolute; bottom:25px; left:142px; display:inline; font-style:italic; font-weight:600;}
+  .site-description {position:absolute; bottom:29px; left:142px; display:inline; font-style:italic; font-weight:600;}
   nav.mobile-button {background:$black; display:inline; position:absolute; bottom:30%; right:15px; border-radius:4px;
     a i{color:$white; font-size:1.5rem; padding:6px 10px 6px; }
   }
@@ -77,6 +78,8 @@ ul.logo-array {margin:0;
   li {margin-left:15px; list-style:none; display:inline-block;
     img {height:45px; width:auto;}
     a {transition:all 0;}
+    .phone-wrap {display:table; width:100%; height:50px;}
+    a#phone {color:$white; font-size:1.5rem; display:table-cell; vertical-align:middle;}
     a#travel-guard {display:block; background:url('http://www.105works.com/italysource/wp-content/themes/italysource/img/logo-travel-guard.png'); width:101px; height:50px; background-position:0 0;
       &:hover {background-position:0 -50px; }} 
     a#asta {display:block; background:url('http://www.105works.com/italysource/wp-content/themes/italysource/img/logo-asta.png'); width:81px; height:50px; background-position:0 0;
@@ -134,6 +137,8 @@ ul.logo-array {margin:0;
   p {margin-bottom:2rem;}
 }
 
+.p-red {color:$red;}
+
 hr {background:url('http://www.105works.com/italysource/wp-content/themes/italysource/img/hr.png'); min-height:24px; background-position:center center; background-repeat:no-repeat; border:0; margin:50px 0;}
 ol, ul, li {font-size:1.3rem;}
 
@@ -162,7 +167,10 @@ a.read-more:hover {color:$green-dark-hover;}
   }
 }
 
-footer {background:#f02a29; color:#fff; 
+footer {background:#f02a29; color:#fff;
+    .footer-address {text-align:center; display:block; margin-bottom:0.5rem;
+      a {color:$white;}
+    }
     p {font-weight:normal; font-size:1rem; line-height:1.3;}
     nav {display:block; text-transform:uppercase; margin:30px 0;
     ul {text-align:center;

@@ -89,11 +89,16 @@ if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_quer
       </nav>
 
       <ul class="logo-array footer-array">
+        <li><div class="phone-wrap"><a href="tel:888-868-1150" id="phone">888-868-1150</a></div></li>
         <li><a href="http://105works.com/italysource//?page_id=50" id="travel-guard"></a></li>
         <li><a href="http://www.travelsense.org/agents/agntdetail.cfm?i=900144060&firstName=Barbara&lastName=Sobol&companyName=ItalySource,%20LLC" id="asta" target="_blank"></a></li>
         <li><a href="http://www.bbb.org/washington-dc-eastern-pa/business-reviews/travel-agencies-and-bureaus/italysource-llc-in-charles-town-wv-7004595/" id="bbb" target="_blank"></a></li>
         <li><a href="https://www.facebook.com/pages/ItalySource-LLC/197999614052?fref=ts" id="fb" target="_blank"></a></li>
       </ul>
+
+      <div class="footer-address">
+        <p>ItalySource LLC &bull; 199 Mill Lane &bull; Charles Town, WV 25414 (near Washington, D.C.) &bull; Fax: 304-728-4763 &bull; Email: <a href="mailto:travels@italysource.com">travels@italysource.com</a></p>
+      </div>
 
 <?php 
 $args = array('page_id' => 251); 
