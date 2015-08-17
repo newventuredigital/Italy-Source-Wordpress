@@ -221,4 +221,10 @@ function my_mce_before_init( $settings ) {
     return $settings;
 }
 
+function custom_gf_scripts()
+{
+
+add_action('wp_head',custom_gf_scripts, 5);
+}
+
 ?>
