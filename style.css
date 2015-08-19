@@ -28,7 +28,7 @@ h1 {
 
 p {
   font-size: 1.3rem;
-  line-height: 1.4;
+  line-height: 1.2;
   font-weight: 400;
 }
 
@@ -378,7 +378,7 @@ ul.logo-array li a#fb:hover {
   clear: left;
   padding-top: 10px;
   font-size: 1rem;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .category-hero {
@@ -540,7 +540,7 @@ footer .footer-address a {
 footer p {
   font-weight: normal;
   font-size: 1rem;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 footer nav {
@@ -586,11 +586,42 @@ a.post-edit-link {
 }
 
 .back-to-top {
-  margin-bottom: 20px;
+  display: none;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  z-index: 50;
+  border-radius: 5px;
+  background: rgba(19, 105, 53, 0.5);
+}
+
+.back-to-top a {
+  display: block;
+  padding: 6px 12px;
+}
+
+.back-to-top a i {
+  color: #ffffff;
+}
+
+.gform_body label {
+  font-size: 1.5rem;
+}
+
+.gform_body ul {
+  font-size: 1.5rem;
+}
+
+.gform_body ul li {
+  list-style: none;
 }
 
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {
+  .back-to-top {
+    bottom: 1em;
+    right: 1em;
+  }
   .small-space-below {
     margin-bottom: 25px;
   }
@@ -629,6 +660,13 @@ a.post-edit-link {
 }
 
 /* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .back-to-top {
+    bottom: 1.5em;
+    right: 1.5em;
+  }
+}
+
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 @media only screen and (min-width: 64.063em) {
   .single-package {

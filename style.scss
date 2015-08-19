@@ -21,7 +21,7 @@ html {-webkit-font-smoothing: antialiased;}
 body{background:url(img/bg-tile.gif); font-family: 'Crimson Text', serif; font-weight:400; color:$black;}
 h1,h2,h3,h4,h5 {color:$red; font-family: 'Crimson Text', serif; font-weight:700;}
 h1 {font-size:2.7rem;}
-p {font-size:1.3rem; line-height:1.4; font-weight:400;}
+p {font-size:1.3rem; line-height:1.2; font-weight:400;}
 a {color:$green-dark; }
 a:hover {color:$green-dark-hover;}
 a:focus {color:$green-dark-hover;}
@@ -118,7 +118,7 @@ ul.logo-array {margin:0;
   .featured {max-width:120px; height:auto; border:1px solid $red; float:left; margin-right:15px;}
   h3 {color:$red; font-size:1.3rem; display:inline;}
   .subhead {color:$red;}
-  p {clear:left; padding-top:10px; font-size:1rem; line-height:1.3;}
+  p {clear:left; padding-top:10px; font-size:1rem; line-height:1.2;}
 }
 
 .category-hero {margin-bottom:20px;}
@@ -171,7 +171,7 @@ footer {background:#f02a29; color:#fff;
     .footer-address {text-align:center; display:block; margin-bottom:0.5rem;
       a {color:$white;}
     }
-    p {font-weight:normal; font-size:1rem; line-height:1.3;}
+    p {font-weight:normal; font-size:1rem; line-height:1.2;}
     nav {display:block; text-transform:uppercase; margin:30px 0;
     ul {text-align:center;
     li {padding:0 10px; list-style:none; line-height:12px; display:inline-block; border-right:1px solid #fff;
@@ -191,7 +191,19 @@ footer {background:#f02a29; color:#fff;
 
 a.post-edit-link {font-style:italic;}
 
-.back-to-top {margin-bottom:20px;}
+.back-to-top {display:none; position:fixed; bottom: 2em; right: 2em; z-index:50; border-radius:5px; background:rgba(19,105,53,0.5);
+  a {display:block; padding:6px 12px;
+    i {color:$white;}
+  }
+}
+
+.gform_body {
+  label {font-size: 1.5rem;}
+  ul {font-size:1.5rem; 
+    li {list-style:none;}
+  }
+
+}
 
 // Small screens
 @media only screen {
@@ -199,6 +211,7 @@ a.post-edit-link {font-style:italic;}
 } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) {
+  .back-to-top {bottom: 1em; right: 1em;}
   .small-space-below {margin-bottom:25px;}
   .hero {h1 {margin:20px 0 10px;}}
   header {
@@ -219,7 +232,7 @@ a.post-edit-link {font-style:italic;}
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  
+  .back-to-top {bottom: 1.5em; right: 1.5em;}
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
  
 // Large screens

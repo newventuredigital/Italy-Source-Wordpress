@@ -12,6 +12,7 @@
 
       <div class="package-intro"><?php the_content(); ?></div>
       <p><?php edit_post_link(); ?></p>
+      <hr>
       <?php endwhile; endif; ?>  
 <?php
 // Only display the packages that pertain to this category listing

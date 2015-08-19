@@ -1,8 +1,5 @@
-<div class="row back-to-top">
-  <div class="large-12 columns text-center">
-    <a href="#top"><i class="fa fa-chevron-up"></i><br>Back to Top</a>
-
-  </div>
+<div class="back-to-top">
+    <a href="#top"><i class="fa fa-chevron-up"></i></a>
 </div>
 
 <section class="blog">
@@ -120,7 +117,6 @@ if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_quer
 <script src="<?php bloginfo('template_directory'); ?>/js/foundation.min.js"></script>
 <script>
 $(document).foundation();
-
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -134,6 +130,17 @@ $(function() {
       }
     }
   });
+});
+
+// Show or hide the sticky footer button
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 200) {
+    $('.back-to-top').fadeIn(200);
+    $('.back-to-top').css("display" , "block");
+  } else {
+    $('.back-to-top').fadeOut(200);
+  }
 });
 
 
