@@ -17,6 +17,9 @@ $green-dropdown: #73b53e;
 $green-dark: #136a35;
 $green-dark-hover: #007b36;
 $black: #000;
+button, .button {background:$green-dark;}
+button:hover, .button:hover {background:$green-dark-hover;}
+
 html {-webkit-font-smoothing: antialiased;}
 body{background:url(img/bg-tile.gif); font-family: 'Crimson Text', serif; font-weight:400; color:$black;}
 h1,h2,h3,h4,h5 {color:$red; font-family: 'Crimson Text', serif; font-weight:700;}

@@ -5,6 +5,14 @@ Description: Custom Wordpress Theme developed by Michael Roach
 Author: Michael Roach
 Author URI: http://www.michaelroach.us/
 */
+button, .button {
+  background: #136a35;
+}
+
+button:hover, .button:hover {
+  background: #007b36;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
 }
