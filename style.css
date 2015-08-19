@@ -5,6 +5,10 @@ Description: Custom Wordpress Theme developed by Michael Roach
 Author: Michael Roach
 Author URI: http://www.michaelroach.us/
 */
+.gform_body ul li {
+  list-style: none;
+}
+
 button, .button {
   background: #136a35;
 }

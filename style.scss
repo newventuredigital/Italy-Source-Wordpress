@@ -17,6 +17,8 @@ $green-dropdown: #73b53e;
 $green-dark: #136a35;
 $green-dark-hover: #007b36;
 $black: #000;
+
+.gform_body ul li {list-style: none;}
 button, .button {background:$green-dark;}
 button:hover, .button:hover {background:$green-dark-hover;}
 
