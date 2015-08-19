@@ -18,7 +18,9 @@ $green-dark: #136a35;
 $green-dark-hover: #007b36;
 $black: #000;
 
+.gform_body {margin-top:15px;}
 .gform_body ul li {list-style: none;}
+.gform_body ul {margin-left:0;}
 button, .button {background:$green-dark;}
 button:hover, .button:hover {background:$green-dark-hover;}
 
