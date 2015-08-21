@@ -636,6 +636,10 @@ a.post-edit-link {
   list-style: none;
 }
 
+.gform_body ul .update-deploy {
+  display: none;
+}
+
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {
   .back-to-top {
