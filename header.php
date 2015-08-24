@@ -3,7 +3,7 @@
   <head>
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Italy Source</title>
+    <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/foundation.min.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/wp.css" />
